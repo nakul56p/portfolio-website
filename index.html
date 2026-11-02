@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nakul | Portfolio</title>
+<meta name="description" content="Portfolio of Nakul, a BSc Computer Science student.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap nav">
+    <a class="logo" href="#home">Nakul</a>
+    <nav aria-label="Main">
+      <ul class="links" id="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="ghost" id="theme" type="button">Dark mode</button>
+      <button class="ghost menu" id="menu" type="button" aria-expanded="false" aria-controls="links">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section id="home">
+  <div class="wrap bento">
+    <div class="tile intro">
+      <p class="eyebrow">Student developer</p>
+      <h1>Hi, I’m Nakul.</h1>
+      <p class="lead">I enjoy building small programs that solve everyday problems, and I am learning to bring them to the web.</p>
+      <div class="btns">
+        <a class="btn" href="#projects">View my projects</a>
+        <a class="btn alt" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="tile mono" role="img" aria-label="Large letter N, Nakul's initial">N</div>
+    <div class="tile stat"><b>BSc CS</b><span>Course</span></div>
+    <div class="tile stat"><b>2nd year</b><span>Year</span></div>
+    <div class="tile stat"><b>KGCAS</b><span>College</span></div>
+    <div class="tile stat"><b>Java</b><span>Project language</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p class="text">I am Nakul, a second-year BSc Computer Science student at KGCAS. I like turning real situations into working programs, like the library system I built in Java. I am now learning web development with HTML, CSS and JavaScript, and I want to keep improving by building more projects.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="cols">
+      <div class="tile"><h3>Programming</h3><ul class="chips"><li>Java</li><li>JavaScript</li></ul></div>
+      <div class="tile"><h3>Web</h3><ul class="chips"><li>HTML</li><li>CSS</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cols">
+      <article class="tile proj">
+        <h3>Library Book Borrowing, Return and Fine Calculation System</h3>
+        <p>A Java system to borrow and return library books and calculate the fine for late returns.</p>
+        <ul class="chips"><li>Java</li></ul>
+        <button class="ghost more" type="button" aria-expanded="false" aria-controls="d1">What I learned</button>
+        <p class="detail" id="d1" hidden>My part: I built this system in Java. What I learned: how to track borrowed books and work out fines.</p>
+        <a class="btn" href="https://github.com/nakul56p/java-project-" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="tile proj">
+        <h3>Personal Portfolio Website</h3>
+        <p>The website you are viewing now, made to introduce me and show my work.</p>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <button class="ghost more" type="button" aria-expanded="false" aria-controls="d2">What I learned</button>
+        <p class="detail" id="d2" hidden>My part: I put together the page structure, styling and interactive features. What I learned: how HTML, CSS and JavaScript work together.</p>
+      </article>
+      <!-- THIRD PROJECT: the brief needs at least three. Copy a card above, change the text, and add a working link.
+      <article class="tile proj">
+        <h3>Project name</h3>
+        <p>What it does.</p>
+        <ul class="chips"><li>Tool</li></ul>
+        <button class="ghost more" type="button" aria-expanded="false" aria-controls="d3">What I learned</button>
+        <p class="detail" id="d3" hidden>My part: ... What I learned: ...</p>
+        <a class="btn" href="LINK" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      -->
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="cols">
+      <div class="tile">
+        <ul class="contact">
+          <li><a href="mailto:nakul56p@gmail.com">nakul56p@gmail.com</a></li>
+          <li><a href="https://github.com/nakul56p" target="_blank" rel="noopener">GitHub: nakul56p</a></li>
+          <li><a href="https://www.linkedin.com/in/nakul-p-68022b385" target="_blank" rel="noopener">LinkedIn: Nakul P</a></li>
+        </ul>
+      </div>
+      <form class="tile" id="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text" autocomplete="name">
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="email">
+        <label for="text">Message</label>
+        <textarea id="text" rows="4"></textarea>
+        <button class="btn" type="submit">Submit</button>
+        <p id="msg" role="status"></p>
+        <p class="note">This form only checks your details. It does not send email.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">&copy; <span id="year"></span> Nakul</footer>
+<button class="totop" id="top" type="button" aria-label="Back to top" hidden>&uarr;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
